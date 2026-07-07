@@ -61,9 +61,9 @@ class DiseasePredictionForm(forms.Form):
     ]
 
     MODEL_CHOICES = [
-        ('Random Forest', 'Random Forest Classifier (Recommended)'),
-        ('Decision Tree', 'Decision Tree Classifier'),
-        ('KNN', 'K-Nearest Neighbors (KNN)'),
+        ('Random Forest', 'High Accuracy Prediction (Random Forest) - Recommended'),
+        ('Decision Tree', 'Quick Analysis (Decision Tree)'),
+        ('KNN', 'Pattern Matching Analysis (KNN)'),
     ]
 
     crop_name = forms.ChoiceField(choices=CROP_CHOICES, label="Crop Name", widget=forms.Select(attrs={'class': 'form-select form-control-custom'}))
