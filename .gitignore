@@ -56,7 +56,7 @@ cover/
 
 # Django stuff:
 local_settings.py
-db.sqlite3
+# db.sqlite3 (Removed so it uploads to Render)
 db.sqlite3-journal
 media/
 
