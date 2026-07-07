@@ -367,7 +367,7 @@ def disease_prediction_view(request):
             'prevention_tips': prevention_tips,
             'ml_model': ml_model
         }
-        messages.success(request, f"Disease prediction completed using {ml_model} classifier.")
+        messages.success(request, f"Disease prediction completed using {ml_model} method.")
         
     # Load recent 10 predictions history
     history = DiseasePrediction.objects.filter(farmer=request.user)
@@ -514,7 +514,7 @@ def disease_prediction_pdf(request, pk):
     # Section 3: Diagnostic Result
     story.append(Paragraph("3. AI Diagnostic Analysis", h2_style))
     result_data = [
-        [Paragraph("<b>AI ML Classifier Model:</b>", body_style), Paragraph(prediction.ml_model, body_style)],
+        [Paragraph("<b>AI Prediction Method:</b>", body_style), Paragraph(prediction.ml_model, body_style)],
         [Paragraph("<b>Predicted Status / Disease:</b>", body_style), Paragraph(f"<b>{prediction.disease}</b>", body_style)],
         [Paragraph("<b>Confidence Score:</b>", body_style), Paragraph(f"<b>{prediction.confidence}%</b>", body_style)],
     ]

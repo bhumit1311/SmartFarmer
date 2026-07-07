@@ -71,5 +71,5 @@ class DiseasePredictionForm(forms.Form):
     humidity = forms.DecimalField(max_value=100, min_value=0, label="Humidity (%)", widget=forms.NumberInput(attrs={'class': 'form-control form-control-custom', 'placeholder': 'e.g. 80', 'step': '0.1'}))
     rainfall = forms.DecimalField(max_value=1000, min_value=0, label="Rainfall (mm)", widget=forms.NumberInput(attrs={'class': 'form-control form-control-custom', 'placeholder': 'e.g. 150', 'step': '0.1'}))
     soil_type = forms.ChoiceField(choices=SOIL_CHOICES, label="Soil Type", widget=forms.Select(attrs={'class': 'form-select form-control-custom'}))
-    ml_model = forms.ChoiceField(choices=MODEL_CHOICES, label="Select Machine Learning Model", widget=forms.Select(attrs={'class': 'form-select form-control-custom'}))
+    ml_model = forms.ChoiceField(choices=MODEL_CHOICES, label="Select AI Prediction Method", widget=forms.Select(attrs={'class': 'form-select form-control-custom'}))
 

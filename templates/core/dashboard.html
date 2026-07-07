@@ -131,8 +131,8 @@
         <div class="col-12">
             <div class="p-4 rounded-4 bg-white border shadow-sm">
                 <div class="d-flex align-items-center justify-content-between mb-4 flex-wrap gap-2">
-                    <h4 class="fw-bold mb-0">Recent Crop Disease Classifier Audits</h4>
-                    <a href="{% url 'crops:disease_prediction' %}" class="btn btn-premium btn-sm"><i class="bi bi-cpu me-1"></i> New Classifier Query</a>
+                    <h4 class="fw-bold mb-0">Recent Crop Disease AI Audits</h4>
+                    <a href="{% url 'crops:disease_prediction' %}" class="btn btn-premium btn-sm"><i class="bi bi-cpu me-1"></i> New AI Prediction</a>
                 </div>
 
                 {% if recent_predictions %}
@@ -142,7 +142,7 @@
                             <tr>
                                 <th>Date/Time</th>
                                 <th>Crop Sown</th>
-                                <th>Classifier Used</th>
+                                <th>AI Method Used</th>
                                 <th>Climate Input (Temp/Hum/Rain)</th>
                                 <th>Predicted Diagnosis</th>
                                 <th>Confidence</th>
