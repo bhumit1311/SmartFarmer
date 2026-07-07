@@ -130,6 +130,10 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
+# Session settings to keep user logged in
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+SESSION_COOKIE_AGE = 30 * 24 * 60 * 60  # 30 days in seconds
+
 # Authentication Configuration
 LOGIN_URL = 'login'
 LOGIN_REDIRECT_URL = 'dashboard'
